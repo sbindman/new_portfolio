@@ -1,0 +1,12 @@
+{
+  "name": "html5up-phantom",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "0.4.5",
+    "grunt-html-build": "0.6.0",
+    "grunt-ng-constant": "^2.0.1"
+  },
+  "dependencies": {
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}
