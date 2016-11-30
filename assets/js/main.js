@@ -197,4 +197,35 @@
 
 	});
 
+
+	//click events for filter
+	$('#crafts').on('click', function() {
+		$('.code').addClass('hide');
+		$('.crafts').removeClass('hide');
+
+		$('#crafts').addClass('active');
+		$('#coding').removeClass('active');
+		$('#all').removeClass('active');
+	});
+
+		//click events for filter
+	$('#coding').on('click', function() {
+		$('.crafts').addClass('hide');
+		$('.code').removeClass('hide');
+
+		$('#coding').addClass('active');
+		$('#crafts').removeClass('active');
+		$('#all').removeClass('active');
+	});
+
+		//click events for filter
+	$('#all').on('click', function() {
+		$('.code').removeClass('hide');
+		$('.crafts').removeClass('hide');
+
+		$('#all').addClass('active');
+		$('#coding').removeClass('active');
+		$('#crafts').removeClass('active');
+	});
+
 })(jQuery);

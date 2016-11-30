@@ -1697,7 +1697,7 @@
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #f2849e !important;
+			color: rgba(170,222,208,1) !important;
 		}
 
 	strong, b {
@@ -1718,7 +1718,7 @@ font-size: 1.75em;
     line-height: 1.3;
     margin: 0;
     letter-spacing: 0.04em;
-    text-transform: uppercase;
+    text-transform: lowercase;
     font-family: 'GT-Walsheim-Black';
 	}
 
@@ -1757,6 +1757,7 @@ font-size: 1.75em;
 
 	h2 {
 		font-size: 1.1em;
+		font-family: 'GT-Walsheim-Bold';
 	}
 
 	h3 {
@@ -1920,12 +1921,12 @@ font-size: 1.75em;
 			}
 
 			.icon.style2:hover {
-				color: #f2849e;
-				border-color: #f2849e;
+				color: rgba(107, 213, 185, 1);
+				border-color: rgba(170,222,208,1);
 			}
 
 			.icon.style2:active {
-				background-color: rgba(242, 132, 158, 0.1);
+				background-color: rgba(107, 213, 185, 0.3);
 			}
 
 /* List */
@@ -2201,8 +2202,8 @@ font-size: 1.75em;
 		input[type="tel"]:focus,
 		select:focus,
 		textarea:focus {
-			border-bottom-color: #f2849e;
-			box-shadow: inset 0 -1px 0 0 #f2849e;
+			border-bottom-color: rgba(170,222,208,1);
+			box-shadow: inset 0 -1px 0 0 rgba(170,222,208,1);
 		}
 
 	.select-wrapper {
@@ -2312,8 +2313,8 @@ font-size: 1.75em;
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #f2849e;
-			box-shadow: 0 0 0 1px #f2849e;
+			border-color: rgba(170,222,208,1);
+			box-shadow: 0 0 0 1px rgba(170,222,208,1);
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2538,8 +2539,8 @@ font-size: 1.75em;
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			color: #f2849e !important;
-			box-shadow: inset 0 0 0 2px #f2849e;
+			color: rgba(170,222,208,1) !important;
+			box-shadow: inset 0 0 0 2px rgba(170,222,208,1);
 		}
 
 		input[type="submit"]:active,
@@ -2581,7 +2582,7 @@ font-size: 1.75em;
 			input[type="button"].special:hover,
 			button.special:hover,
 			.button.special:hover {
-				background-color: #f2849e;
+				background-color: rgba(170,222,208,1);
 			}
 
 			input[type="submit"].special:active,
@@ -2657,6 +2658,8 @@ font-size: 1.75em;
 				.tiles article > .image .label-name {
 						text-align: center;
 						font-size: 18px;
+    					font-family: 'GT-Walsheim-Thin';
+    					text-transform: lowercase;
 				}
 
 				.tiles article > .image:before {
@@ -2774,7 +2777,7 @@ font-size: 1.75em;
 					}
 
 			.tiles article.style1 > .image:before {
-				/*background-color: #f2849e;*/
+				/*background-color: rgba(170,222,208,1);*/
 				/*background-color: #000;*/
 				/*opacity: 0.2;*/
 			}
@@ -2832,6 +2835,12 @@ font-size: 1.75em;
 					margin: 1.25em 0 0 1.25em;
 				}
 
+				.tiles article.hide {
+					width: 0;
+					margin: 0;
+					/*transition: width 0.2s ease;*/
+				}
+
 		}
 
 		@media screen and (max-width: 980px) {
@@ -2879,6 +2888,33 @@ font-size: 1.75em;
 				}
 
 		}
+	.filter-menu {
+		    padding: 0 5.5em 3.5em 0;
+	}
+
+	.filter-menu .header-button {
+			    font-size: 16px;
+			    cursor: pointer;
+			    color: #333333;
+			    letter-spacing: 0.08em;
+			    font-weight: 200;
+			    float: right;
+			    vertical-align: top;
+			    margin-top: 50px;
+			    margin: .6em 0 .6em .6em;
+			    font-family: 'GT-Walsheim-Regular';
+			    text-transform: lowercase;
+			}
+
+	.filter-menu .header-button:hover {
+		text-decoration: underline;
+		color: black;
+	}
+
+	.filter-menu .header-button.active {
+		text-decoration: underline;
+		color: black;
+	}
 
 /* Header */
 
@@ -2904,10 +2940,27 @@ font-size: 1.75em;
 		    width: 100%;
 		}
 
+			#header .logo a {
+				    text-decoration: none;
+				    border-bottom: 0;
+				    color: black;
+			}
+
+			#header .logo a name:hover {
+				    text-decoration: none;
+				    border-bottom: 0;
+				    color: black;
+			}
+
 			#header .logo > * {
 				display: inline-block;
 				vertical-align: middle;
-    			    margin: 1.8em .6em .6em 0;
+    			    margin: 1.8em 0 .6em 0;
+			}
+
+			#header .logo .name {
+				font-size: 36px;
+				margin: 1.2em .6em 0 0;
 			}
 
 			#header .logo .buttons { 
@@ -2917,7 +2970,7 @@ font-size: 1.75em;
 			}
 
 			#header .logo .buttons .header-button {
-			    font-size: 16px;
+			    font-size: 18px;
 			    cursor: pointer;
 			    color: #333333;
 			    letter-spacing: 0.08em;
@@ -2925,11 +2978,16 @@ font-size: 1.75em;
 			    float: right;
 			    vertical-align: top;
 			    margin-top: 50px;
-			    margin: .6em 0 .6em .6em;
+			    margin: .6em 0 0 2em;
 			}
 
 			#header .logo .header-button:hover {
-				text-decoration: underline;
+			    border-bottom: 2px solid black;
+				color: black;
+			}
+
+			#header .logo .header-button.active {
+				border-bottom: 2px solid black;
 				color: black;
 			}
 
@@ -3029,11 +3087,44 @@ font-size: 1.75em;
 							opacity: 0;
 						}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 636px) {
 
 			#header {
-				padding: 4em 0 0.1em 0 ;
+				padding: 1em 0 0.1em 0;
 			}
+
+			#header .logo a {
+				margin: 0 auto;
+			    display: block;
+			    text-align: center;
+			    font-size: 30px;
+			}
+
+			#header .logo .buttons {
+			    float: right;
+			    margin: .5em 0;
+			    font-family: 'GT-Walsheim-Regular';
+			    display: block;
+			    width: 100%;
+			}
+
+			#header .logo .name {
+			    font-size: 34px;
+			     margin: 0; 
+			    float: right;
+			}
+
+			#header .logo .buttons .header-button {
+			    font-size: 16px;
+			}
+
+
+
+			.filter-menu .header-button {
+			    margin: 0 0 .5em .6em;
+
+			}
+
 
 				#header nav {
 					right: 0.5em;
@@ -3044,6 +3135,14 @@ font-size: 1.75em;
 						background-size: 1.5em 1.5em;
 					}
 
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.filter-menu {
+			    padding: 0 1.5em 0 0;
+			    margin: -15px 0 0 0;
+			}
 		}
 
 /* Menu */
@@ -3179,7 +3278,7 @@ font-size: 1.75em;
 				opacity: 0;
 			}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 636px) {
 
 			#menu {
 				-moz-transform: translateX(16.5em);
@@ -3203,6 +3302,10 @@ font-size: 1.75em;
 					#menu > .close:before, #menu > .close:after {
 						background-size: 1.5em 1.5em;
 					}
+
+				#wrapper > * > .inner .right-column {
+				    padding-left: 0 !important;
+				}
 
 		}
 
@@ -3421,7 +3524,7 @@ font-size: 1.75em;
 	#wrapper > * > .inner .left-column h1 {
 		/*font-family: 'Raleway';*/
     	font-weight: 500;
-    	margin-bottom: .3em;
+    	margin-bottom: .6em;
 	}
 	 
 

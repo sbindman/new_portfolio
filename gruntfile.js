@@ -85,16 +85,6 @@ module.exports = function(grunt) {
                 }
             }
         },
-        about: {
-            src: 'generic.html',
-            dest: 'about.html',
-            options: {
-                beautify: true,
-                sections: {
-                    views: 'snippets/about.html'
-                }
-            }
-        },
         lipbalm: {
             src: 'generic.html',
             dest: 'lipbalm.html',
