@@ -2411,6 +2411,10 @@ font-size: 1.75em;
 					margin: 0 0 2em 0;
 				}
 
+				.content {
+					display: none;
+				}
+
 			}
 
 /* Table */
