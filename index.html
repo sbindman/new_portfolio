@@ -23,18 +23,21 @@
 			<div id="wrapper">
 
 				<!-- Header -->
-					<header id="header">
+					<div id="header">
 						<div class="inner">
 
 							<!-- Logo -->
-								<div href="index.html" class="logo">
-									<span>SARAH BINDMAN</span>
+								<div class="logo">
+									
+										<a href="index.html"><span class='name'>SARAH BINDMAN</span></a>
 										<!-- <img src="images/name.png" alt="name logo" /> -->
-										<span class='buttons'>
-									<span class='header-button'>CODING</span>
-									<span class='header-button'>CRAFTS</span>
-									<span class='header-button'>ABOUT</span>
-								</span>
+							
+									<span class='buttons'>
+										<a href="about.html"><span class='header-button'>About</span></a>
+											<a href="index.html"><span class='header-button active'>Projects</span></a>
+									</span>
+								
+						
 								</div>
 
 							<!-- Nav -->
@@ -45,7 +48,7 @@
 								</nav>
  -->
 						</div>
-					</header>
+					</div>
 
 				<!-- Menu -->
 					<!-- <nav id="menu">
@@ -67,40 +70,19 @@
 
 				<!-- Main -->
 					<div id="main">
+						<div class='filter-menu'>
+								<span  id='crafts' class='header-button'>CRAFTS</span>
+									<span id='coding' class='header-button'>CODING</span>
+									<span id='all' class='header-button active'>ALL</span>
+									
+									
+							
+							</div>
 						<div class="inner">
-							<header>
-					
-							</header>
+				
+				
 							<section class="tiles">
-
-								<article class="style1">
-									<span class="image">
-										<img src="images/candles.jpg" alt="candles" />
-										<div class='label-name'>Candles</div>
-										<div>Candles</div>
-									</span>
-									<a href="candles.html">
-										<div class="content">
-												<!-- <h2>Candles</h2> -->
-											<p>Adventures with soy wax</p>
-										</div>
-									</a>
-								</article>
-
-								<article class="style1">
-									<span class="image">
-										<img src="images/affirm1.png" alt="affirmme" />
-										<div class='label-name'>Good Vibes Only</div>
-									</span>
-									<a href="affirmme.html">
-										<!-- <h2>Good Vibes Only</h2> -->
-										<div class="content">
-											<p>Postive affirmations</p>
-										</div>
-									</a>
-								</article>
-
-								<article class="style1">
+								<article class="style1 code">
 									<div class="image">
 										<img src="images/haras.png" alt="haras project" />
 										<div class='label-name'>Haras</div>
@@ -113,7 +95,7 @@
 									</a>
 								</article>
 
-								<article class="style1">
+								<article class="style1 crafts">
 									<span class="image">
 										<img src="images/lipbalm.jpg" alt="" />
 										<div class='label-name'>Lip Balm</div>
@@ -125,21 +107,7 @@
 										</div>
 									</a>
 								</article>
-
-								<article class="style1">
-									<span class="image">
-										<img src="images/m&e.png" alt="" />
-										<div class='label-name'>Monitoring & Evaluation Tool</div>
-									</span>
-									<a href="m&e.html">
-										<!-- <h2>Monitoring & Evaluation Tool</h2> -->
-										<div class="content">
-											<p>Visualzing M&E data from USAID</p>
-										</div>
-									</a>
-								</article>
-
-								<article class="style1">
+								<article class="style1 code">
 									<span class="image">
 										<img src="images/seafood.png" alt="seafood fest" />
 										<div class='label-name'>Seafood Fest</div>
@@ -152,22 +120,7 @@
 										</div>
 									</a>
 								</article>
-
-								<article class="style1">
-									<span class="image">
-										<img src="images/shibori1.jpg" alt="shibori" />
-										<div class='label-name'>Shibori</div>
-									</span>
-									<a href="shibori.html">
-										<!-- <h2>Shibori</h2> -->
-										<div class="content">
-											<p>Indigo Tie Dye</p>
-										</div>
-									</a>
-								</article>
-
-
-								<article class="style1">
+								<article class="style1 code">
 									<span class="image">
 										<img src="images/veloroute1.png" alt="veloroute" />
 										<div class='label-name'>Veloroute</div>
@@ -180,7 +133,7 @@
 									</a>
 								</article>
 						
-								<article class="style1">
+								<article class="style1 code">
 									<span class="image">
 										<img src="images/wanderlust.png" alt="wanderlust" />
 										<div class='label-name'>Wanderlust</div>
@@ -192,9 +145,55 @@
 										</div>
 									</a>
 								</article>
+								<article class="style1 crafts">
+									<span class="image">
+										<img src="images/candles.jpg" alt="candles" />
+										<div class='label-name'>Candles</div>
+									</span>
+									<a href="candles.html">
+										<div class="content">
+												<!-- <h2>Candles</h2> -->
+											<p>Adventures with soy wax</p>
+										</div>
+									</a>
+								</article>
 
-								
-	
+								<article class="style1 code">
+									<span class="image">
+										<img src="images/affirm1.png" alt="affirmme" />
+										<div class='label-name'>Good Vibes Only</div>
+									</span>
+									<a href="affirmme.html">
+										<!-- <h2>Good Vibes Only</h2> -->
+										<div class="content">
+											<p>Postive affirmations</p>
+										</div>
+									</a>
+								</article>
+								<article class="style1 code">
+									<span class="image">
+										<img src="images/m&e.png" alt="" />
+										<div class='label-name'>Monitoring & Evaluation Tool</div>
+									</span>
+									<a href="m&e.html">
+										<!-- <h2>Monitoring & Evaluation Tool</h2> -->
+										<div class="content">
+											<p>Visualzing M&E data from USAID</p>
+										</div>
+									</a>
+								</article>
+								<article class="style1 crafts">
+									<span class="image">
+										<img src="images/shibori1.jpg" alt="shibori" />
+										<div class='label-name'>Shibori</div>
+									</span>
+									<a href="shibori.html">
+										<!-- <h2>Shibori</h2> -->
+										<div class="content">
+											<p>Indigo Tie Dye</p>
+										</div>
+									</a>
+								</article>
 							</section>
 						</div>
 					</div>
@@ -229,6 +228,7 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<scripts src="assets/js/custom_js.js"></scripts>
 
 	</body>
 </html>
