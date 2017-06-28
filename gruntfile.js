@@ -94,6 +94,36 @@ module.exports = function(grunt) {
                     views: 'snippets/lipbalm.html'
                 }
             }
+        },
+        cadasta: {
+            src: 'generic.html',
+            dest: 'cadasta.html',
+            options: {
+                beautify: true,
+                sections: {
+                    views: 'snippets/cadasta.html'
+                }
+            }
+        },
+        transitFight: {
+            src: 'generic.html',
+            dest: 'transitFight.html',
+            options: {
+                beautify: true,
+                sections: {
+                    views: 'snippets/transitFight.html'
+                }
+            }
+        },
+        jewelry: {
+            src: 'generic.html',
+            dest: 'jewelry.html',
+            options: {
+                beautify: true,
+                sections: {
+                    views: 'snippets/jewelry.html'
+                }
+            }
         }
     }
   });
