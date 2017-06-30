@@ -49,6 +49,7 @@
 	color: rgba(170,222,208,1);
 }
 
+#cover {position: fixed; height: 100%; width: 100%; top:0; left: 0; background: #000; z-index:9999;}
 
 
 
