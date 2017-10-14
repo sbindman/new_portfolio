@@ -197,11 +197,23 @@
 
 	});
 
+	$.fn.extend({
+    animateCss: function (animationName) {
+        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        this.addClass('animated ' + animationName).one(animationEnd, function() {
+            $(this).removeClass('animated ' + animationName);
+        });
+        return this;
+    }
+	});
+
 
 	//click events for filter
 	$('#crafts').on('click', function() {
 		$('.code').addClass('hide');
+		$('.code').animateCss('fadeOut');
 		$('.crafts').removeClass('hide');
+		$('.crafts').animateCss('zoomIn');
 
 		$('#crafts').addClass('active');
 		$('#coding').removeClass('active');
@@ -211,7 +223,9 @@
 		//click events for filter
 	$('#coding').on('click', function() {
 		$('.crafts').addClass('hide');
+		$('.crafts').animateCss('fadeOut');
 		$('.code').removeClass('hide');
+		$('.code').animateCss('zoomIn');
 
 		$('#coding').addClass('active');
 		$('#crafts').removeClass('active');
@@ -222,6 +236,8 @@
 	$('#all').on('click', function() {
 		$('.code').removeClass('hide');
 		$('.crafts').removeClass('hide');
+		$('.code').animateCss('zoomIn');
+		$('.crafts').animateCss('zoomIn');
 
 		$('#all').addClass('active');
 		$('#coding').removeClass('active');
